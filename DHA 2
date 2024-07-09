@@ -1,0 +1,14 @@
+DHA 2 
+
+These code should be written into the command prompt.
+
+C:\>gcc -E hello.c -o hello.i
+C:\>type hello.i
+C:\>gcc -S hello.i -o hello.s
+C:\>type hello.s
+C:\>as hello.s -o hello.o
+C:\>dumpbin /headers hello.o
+C:\>gcc hello.o -o hello.exe
+C:\>dumpbin /headers hello.exe
+C:\>hello.exe
+C:\>echo %ERRORLEVEL%
